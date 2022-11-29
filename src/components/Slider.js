@@ -1,10 +1,21 @@
 import React, { useRef, useState } from "react";
-import { FaExpand } from "react-icons/fa";
+import { FaCompressArrowsAlt, FaExpand } from "react-icons/fa";
 import data from "../images/data";
 
 const Slider = () => {
   const [imgIndex, setImgIndex] = useState(0);
+  const [isFullScreen, setIsFullScreen] = useState(false);
   const thumbnailRef = useRef();
+
+  const handleFullScreen = () => {
+    if (isFullScreen) {
+      setIsFullScreen(false);
+      document.exitFullscreen();
+    } else {
+      setIsFullScreen(true);
+      document.documentElement.requestFullscreen();
+    }
+  };
 
   const handleClick = (index) => {
     const scrollWidth = thumbnailRef.current.offsetWidth;
@@ -18,7 +29,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider">
+    <div className={isFullScreen ? "full-screen" : "slider"}>
       <div className="image-wrapper">
         <div className="image-order">
           <span>
@@ -26,9 +37,9 @@ const Slider = () => {
           </span>
         </div>
         <img src={data[imgIndex].url} alt={data[imgIndex].url} />
-        <div className="btn-zoom">
-          <button>
-            <FaExpand />
+        <div className="fs-toggle">
+          <button onClick={handleFullScreen}>
+            {isFullScreen ? <FaCompressArrowsAlt /> : <FaExpand />}
           </button>
         </div>
       </div>

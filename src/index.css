@@ -3,9 +3,10 @@
 ::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-.main {
+main {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -24,13 +25,26 @@
   place-items: center;
 }
 
-.slider .image-wrapper {
-  width: 100%;
+.full-screen {
   height: 100%;
+  width: 100%;
+  margin: 2em auto 0;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  gap: 0.5em;
+  place-items: center;
+}
+
+.image-wrapper {
   position: relative;
 }
 
-.slider .image-order {
+.full-screen .image-wrapper img {
+  height: 80vh;
+  object-fit: contain;
+}
+
+.image-order {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0.5em;
@@ -38,7 +52,7 @@
   z-index: 1;
 }
 
-.slider .btn-zoom {
+.fs-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +61,7 @@
   right: 0.5em;
 }
 
-.btn-zoom button {
+.fs-toggle button {
   text-align: center;
   display: block;
   background: none;
@@ -59,7 +73,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.btn-zoom button:hover {
+.fs-toggle button:hover {
   color: #337ab7;
 }
 
@@ -95,7 +109,7 @@
   height: 100%;
 }
 
-.slider img {
+img {
   display: block;
   width: 100%;
   height: 100%;
