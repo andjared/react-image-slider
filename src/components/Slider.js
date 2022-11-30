@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaCompressArrowsAlt, FaExpand } from "react-icons/fa";
 import data from "../images/data";
 
@@ -28,12 +28,37 @@ const Slider = () => {
     setImgIndex(index);
   };
 
+  function handleEscape() {
+    if (
+      !document.fullscreenElement &&
+      !document.webkitIsFullScreen &&
+      !document.mozFullScreen &&
+      !document.msFullscreenElement
+    ) {
+      setIsFullScreen(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("fullscreenchange", handleEscape);
+    document.addEventListener("webkitfullscreenchange", handleEscape);
+    document.addEventListener("mozfullscreenchange", handleEscape);
+    document.addEventListener("MSFullscreenChange", handleEscape);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleEscape);
+      document.removeEventListener("webkitfullscreenchange", handleEscape);
+      document.removeEventListener("mozfullscreenchange", handleEscape);
+      document.removeEventListener("MSFullscreenChange", handleEscape);
+    };
+  }, [isFullScreen]);
+
   return (
-    <div className={isFullScreen ? "full-screen" : "slider"}>
+    <div className="slider">
       <div className="image-wrapper">
         <div className="image-order">
           <span>
-            {imgIndex + 1} / {data.length - 1}
+            {imgIndex + 1} / {data.length}
           </span>
         </div>
         <img src={data[imgIndex].url} alt={data[imgIndex].url} />
