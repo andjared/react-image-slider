@@ -1,3 +1,24 @@
+<div>
+<h4>React Image Slider </h4>
+<p>Carousel slider with thumbnails built with React. </p>
+<p>Option to switch full screen mode. </p>
+<p>Published on GH Pages: https://andjared.github.io/react-image-slider/ </p>
+</div>
+
+---
+![react-image-slider](screenshot.png)
+
+
+---
+
+<div align="center">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40"                       height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40"        height="40"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+</div>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
