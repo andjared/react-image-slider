@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-image-slider/static/css/main.39597be2.css",
+    "main.js": "/react-image-slider/static/js/main.f79b7f7f.js",
+    "static/media/17.jpg": "/react-image-slider/static/media/17.fc8af258c076be7ecc3d.jpg",
+    "static/media/19.jpg": "/react-image-slider/static/media/19.90c6d6c9a04eaa2ed084.jpg",
+    "static/media/10.jpg": "/react-image-slider/static/media/10.ba3f0be7a52b534e874f.jpg",
+    "static/media/6.jpg": "/react-image-slider/static/media/6.ff8a8bd1e330d02c761e.jpg",
+    "static/media/2.jpg": "/react-image-slider/static/media/2.c1bb4fa8d400729a360e.jpg",
+    "static/media/18.jpg": "/react-image-slider/static/media/18.430217b9322176ce59e0.jpg",
+    "static/media/1.jpg": "/react-image-slider/static/media/1.a95a2819c6dab2974049.jpg",
+    "static/media/9.jpg": "/react-image-slider/static/media/9.703f8d417c7814e920de.jpg",
+    "static/media/8.jpg": "/react-image-slider/static/media/8.843f603ffff3e5b9c1f1.jpg",
+    "static/media/5.jpg": "/react-image-slider/static/media/5.e06b87961403eb70e27e.jpg",
+    "static/media/3.jpg": "/react-image-slider/static/media/3.627339a4952578468762.jpg",
+    "static/media/13.jpg": "/react-image-slider/static/media/13.dd3a51af350b59164512.jpg",
+    "static/media/14.jpg": "/react-image-slider/static/media/14.3554e39f1b567da1573b.jpg",
+    "static/media/11.jpg": "/react-image-slider/static/media/11.38133315c38779ba0047.jpg",
+    "static/media/7.jpg": "/react-image-slider/static/media/7.d13b55213076281743a0.jpg",
+    "static/media/12.jpg": "/react-image-slider/static/media/12.395fb287a9168dd5d1c4.jpg",
+    "static/media/15.jpg": "/react-image-slider/static/media/15.1b90b27e5291f3702c71.jpg",
+    "static/media/4.jpg": "/react-image-slider/static/media/4.b1000babf5b6c85011fa.jpg",
+    "static/media/16.jpg": "/react-image-slider/static/media/16.f8e14cc31ad7edfad4f1.jpg",
+    "static/media/20.jpg": "/react-image-slider/static/media/20.86655bc58535bf893e10.jpg",
+    "index.html": "/react-image-slider/index.html",
+    "main.39597be2.css.map": "/react-image-slider/static/css/main.39597be2.css.map",
+    "main.f79b7f7f.js.map": "/react-image-slider/static/js/main.f79b7f7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39597be2.css",
+    "static/js/main.f79b7f7f.js"
+  ]
+}
